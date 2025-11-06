@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin name: unitone Snow Monkey Blocks integrator
- * Version: 0.0.2
+ * Version: 0.0.3
  * Tested up to: 6.8
  * Requires at least: 6.8
  * Requires PHP: 7.4
