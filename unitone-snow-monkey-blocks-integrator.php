@@ -56,7 +56,7 @@ class Bootstrap {
 					?>
 					<div class="notice notice-warning is-dismissible">
 						<p>
-							<?php esc_html_e( '[unitone Snow Monkey Blocks Integrator] Needs the Snow Monkey Blocks.', 'unitone-unitone-snow-monkey-blocks-integrator' ); ?>
+							<?php esc_html_e( '[unitone Snow Monkey Blocks Integrator] Needs the Snow Monkey Blocks.', 'unitone-snow-monkey-blocks-integrator' ); ?>
 						</p>
 					</div>
 					<?php
@@ -73,7 +73,7 @@ class Bootstrap {
 					?>
 					<div class="notice notice-warning is-dismissible">
 						<p>
-							<?php esc_html_e( '[unitone Snow Monkey Blocks Integrator] Needs the unitone.', 'unitone-unitone-snow-monkey-blocks-integrator' ); ?>
+							<?php esc_html_e( '[unitone Snow Monkey Blocks Integrator] Needs the unitone.', 'unitone-snow-monkey-blocks-integrator' ); ?>
 						</p>
 					</div>
 					<?php

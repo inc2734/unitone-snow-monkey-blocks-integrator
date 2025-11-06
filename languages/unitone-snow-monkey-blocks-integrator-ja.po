@@ -1,0 +1,46 @@
+# Copyright (C) 2025 Takashi Kitajima
+# This file is distributed under the GPL2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: unitone Snow Monkey Blocks integrator 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/unitone-snow-"
+"monkey-blocks-integrator\n"
+"POT-Creation-Date: 2025-11-06T07:15:59+00:00\n"
+"PO-Revision-Date: 2025-11-06 16:19+0900\n"
+"Last-Translator: inc2734 <inc@2inc.org>\n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+"X-Domain: unitone-snow-monkey-blocks-integrator\n"
+
+#. Plugin Name of the plugin
+#: unitone-snow-monkey-blocks-integrator.php
+msgid "unitone Snow Monkey Blocks integrator"
+msgstr "unitone Snow Monkey Blocks integrator"
+
+#. Description of the plugin
+#: unitone-snow-monkey-blocks-integrator.php
+msgid "This plugin makes unitone beautifully display Snow Monkey Blocks."
+msgstr "このプラグインは Snow Monkey Blocks を美しく表示します。"
+
+#. Author of the plugin
+#: unitone-snow-monkey-blocks-integrator.php
+msgid "Takashi Kitajima"
+msgstr "Takashi Kitajima"
+
+#. Author URI of the plugin
+#: unitone-snow-monkey-blocks-integrator.php
+msgid "https://2inc.org"
+msgstr "https://2inc.org"
+
+#: unitone-snow-monkey-blocks-integrator.php:59
+msgid "[unitone Snow Monkey Blocks Integrator] Needs the Snow Monkey Blocks."
+msgstr ""
+"[unitone Snow Monkey Blocks Integrator] Snow Monkey Blocks が必要です。"
+
+#: unitone-snow-monkey-blocks-integrator.php:76
+msgid "[unitone Snow Monkey Blocks Integrator] Needs the unitone."
+msgstr "[unitone Snow Monkey Blocks Integrator] unitone が必要です。"
