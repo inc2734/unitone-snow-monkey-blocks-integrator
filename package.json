@@ -44,7 +44,6 @@
 		"css:app": "sass --no-source-map src/css/app.scss:dist/css/app.css && postcss dist/css/app.css -r",
 		"css": "run-p css:*",
 		"build": "run-p css",
-		"test:lint:blocks": "wp-scripts lint-js src/blocks",
 		"test:lint:php": "wp-env start && npm run composer lint",
 		"test:lint": "run-s test:lint:*",
 		"test": "run-s test:*",
