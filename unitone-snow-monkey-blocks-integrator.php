@@ -1,11 +1,10 @@
 <?php
 /**
  * Plugin name: unitone Snow Monkey Blocks integrator
- * Version: 0.0.3
+ * Version: 0.0.4
  * Tested up to: 6.8
  * Requires at least: 6.8
  * Requires PHP: 7.4
- * Requires unitone: 1.0.1
  * Description: This plugin makes unitone beautifully display Snow Monkey Blocks.
  * Author: Takashi Kitajima
  * Author URI: https://2inc.org
