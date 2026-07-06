@@ -1,10 +1,11 @@
 <?php
 /**
  * Plugin name: unitone Snow Monkey Blocks integrator
- * Version: 0.0.4
- * Tested up to: 6.8
- * Requires at least: 6.8
+ * Version: 1.0.0
+ * Tested up to: 7.0
+ * Requires at least: 7.0
  * Requires PHP: 7.4
+ * Requires unitone: 27.0.0-beta1
  * Description: This plugin makes unitone beautifully display Snow Monkey Blocks.
  * Author: Takashi Kitajima
  * Author URI: https://2inc.org
@@ -47,6 +48,7 @@ class Bootstrap {
 	 */
 	public function _bootstrap() {
 		require UNITONE_SNOW_MONKEY_BLOCKS_INTEGRATOR_PATH . '/inc/updater.php';
+		require UNITONE_SNOW_MONKEY_BLOCKS_INTEGRATOR_PATH . '/inc/i18n.php';
 
 		if ( ! class_exists( '\Snow_Monkey\Plugin\Blocks\Bootstrap' ) ) {
 			add_action(
@@ -81,7 +83,43 @@ class Bootstrap {
 			return;
 		}
 
-		require UNITONE_SNOW_MONKEY_BLOCKS_INTEGRATOR_PATH . '/inc/i18n.php';
+		$data = get_file_data(
+			__FILE__,
+			array(
+				'RequiresUnitone' => 'Requires unitone',
+			)
+		);
+
+		if (
+			isset( $data['RequiresUnitone'] ) &&
+			version_compare( $theme->get( 'Version' ), $data['RequiresUnitone'], '<' )
+		) {
+			add_action(
+				'admin_notices',
+				function () use ( $data ) {
+					?>
+					<div class="notice notice-warning is-dismissible">
+						<p>
+							<?php
+							echo esc_html(
+								sprintf(
+									// translators: %1$s: version.
+									__(
+										'[unitone Snow Monkey Blocks Integrator] Needs unitone theme %1$s or more.',
+										'unitone-snow-monkey-blocks-integrator'
+									),
+									'v' . $data['RequiresUnitone']
+								)
+							);
+							?>
+						</p>
+					</div>
+					<?php
+				}
+			);
+			return;
+		}
+
 		require UNITONE_SNOW_MONKEY_BLOCKS_INTEGRATOR_PATH . '/inc/assets.php';
 	}
 }

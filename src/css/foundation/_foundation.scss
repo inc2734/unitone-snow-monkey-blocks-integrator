@@ -1,35 +1,35 @@
 .has-sm-xs-font-size {
-	--unitone--font-size: -1;
+	font-size: var(--wp--preset--font-size--unitone-xs);
 }
 
 .has-sm-s-font-size {
-	--unitone--font-size: -1;
+	font-size: var(--wp--preset--font-size--unitone-s);
 }
 
 .has-sm-l-font-size {
-	--unitone--font-size: 1;
+	font-size: var(--wp--preset--font-size--unitone-l);
 }
 
 .has-sm-xl-font-size {
-	--unitone--font-size: 2;
+	font-size: var(--wp--preset--font-size--unitone-xl);
 }
 
 .has-sm-2-xl-font-size {
-	--unitone--font-size: 3;
+	font-size: var(--wp--preset--font-size--unitone-2-xl);
 }
 
 .has-sm-3-xl-font-size {
-	--unitone--font-size: 4;
+	font-size: var(--wp--preset--font-size--unitone-3-xl);
 }
 
 .has-sm-4-xl-font-size {
-	--unitone--font-size: 5;
+	font-size: var(--wp--preset--font-size--unitone-4-xl);
 }
 
 .has-sm-5-xl-font-size {
-	--unitone--font-size: 6;
+	font-size: var(--wp--preset--font-size--unitone-5-xl);
 }
 
 .has-sm-6-xl-font-size {
-	--unitone--font-size: 7;
+	font-size: var(--wp--preset--font-size--unitone-6-xl);
 }
