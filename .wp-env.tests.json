@@ -1,11 +1,9 @@
 {
 	"core": null,
 	"plugins": [ "." ],
+	"port": 8889,
 	"config": {
 		"WP_DEBUG": true
 	},
-	"testsEnvironment": false,
-	"mappings": {
-		".export": "./.export"
-	}
+	"testsEnvironment": false
 }
