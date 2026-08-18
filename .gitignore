@@ -7,3 +7,4 @@ dist
 /unitone-snow-monkey-blocks-integrator
 /unitone-snow-monkey-blocks-integrator.zip
 .wp-env.override.json
+.wp-env.tests.override.json
