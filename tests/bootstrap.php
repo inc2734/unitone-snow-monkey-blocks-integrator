@@ -2,6 +2,8 @@
 // Require composer dependencies.
 require_once dirname( dirname( __FILE__ ) ) . '/vendor/autoload.php';
 
+define( 'WP_TESTS_PHPUNIT_POLYFILLS_PATH', dirname( __DIR__ ) . '/vendor/yoast/phpunit-polyfills' );
+
 // If we're running in WP's build directory, ensure that WP knows that, too.
 if ( 'build' === getenv( 'LOCAL_DIR' ) ) {
 	define( 'WP_RUN_CORE_TESTS', true );
@@ -39,22 +41,6 @@ define( 'GUTENBERG_LOAD_VENDOR_SCRIPTS', false );
  * Manually load the plugin being tested.
  */
 function _manually_load_plugin() {
-	$theme_dir = __DIR__ . '/../.themes/unitone';
-	$current_theme = basename( $theme_dir );
-	$theme_root = dirname( $theme_dir );
-	add_filter( 'theme_root', function() use ( $theme_root ) {
-		return $theme_root;
-	} );
-
-	register_theme_directory( $theme_root );
-
-	add_filter( 'pre_option_template', function() use ( $current_theme ) {
-		return $current_theme;
-	});
-	add_filter( 'pre_option_stylesheet', function() use ( $current_theme ) {
-		return $current_theme;
-	});
-
 	require dirname( dirname( __FILE__ ) ) . '/unitone-snow-monkey-blocks-integrator.php';
 }
 tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );

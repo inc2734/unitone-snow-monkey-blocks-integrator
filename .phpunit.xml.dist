@@ -8,7 +8,7 @@
 	convertWarningsToExceptions="true"
 	>
 	<testsuites>
-		<testsuite name="unitone-search">
+		<testsuite name="unitone-snow-monkey-blocks-integrator">
 			<directory prefix="test-" suffix=".php">./tests/</directory>
 			<exclude>./tests/test-sample.php</exclude>
 		</testsuite>
